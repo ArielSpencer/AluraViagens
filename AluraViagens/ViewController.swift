@@ -15,6 +15,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         viagensTableView.dataSource = self
         viagensTableView.delegate = self
+        
+        view.backgroundColor = UIColor(red: 30/255, green: 59/255, blue: 119/255, alpha: 1)
     }
 }
 
