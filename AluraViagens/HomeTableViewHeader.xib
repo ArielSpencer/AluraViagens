@@ -14,9 +14,8 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c5X-r8-D1a" userLabel="Header View">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c5X-r8-D1a" userLabel="Header View">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Alura Viagens" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCE-yN-Z2G">
                             <rect key="frame" x="46" y="51" width="149" height="33"/>
@@ -27,10 +26,12 @@
                         </label>
                     </subviews>
                     <color key="backgroundColor" red="0.11764705882352941" green="0.23137254901960785" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="250" id="hEC-y5-D4e"/>
+                    </constraints>
                 </view>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="epe-aQ-ZLJ" userLabel="Banner View">
-                    <rect key="frame" x="19" y="170" width="375" height="130"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="epe-aQ-ZLJ" userLabel="Banner View">
+                    <rect key="frame" x="19" y="130" width="375" height="130"/>
                     <subviews>
                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ehx-FS-0Ip">
                             <rect key="frame" x="0.0" y="0.0" width="200" height="130"/>
@@ -43,10 +44,21 @@
                         </imageView>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="130" id="g3v-aM-Efv"/>
+                    </constraints>
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="epe-aQ-ZLJ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="19" id="ChK-RM-vSj"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="epe-aQ-ZLJ" secondAttribute="trailing" constant="20" id="M5M-Mm-8vR"/>
+                <constraint firstItem="c5X-r8-D1a" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="WDm-Mc-S7h"/>
+                <constraint firstItem="epe-aQ-ZLJ" firstAttribute="bottom" secondItem="c5X-r8-D1a" secondAttribute="bottom" constant="10" id="e0i-QB-vmE"/>
+                <constraint firstItem="c5X-r8-D1a" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="oms-eo-lGe"/>
+                <constraint firstItem="c5X-r8-D1a" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="tC1-aL-VLs"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="bannerImageView" destination="GkF-ji-EPf" id="wmy-Gl-DLN"/>
