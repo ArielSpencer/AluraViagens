@@ -15,11 +15,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c5X-r8-D1a" userLabel="Header View">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+                    <rect key="frame" x="-293" y="0.0" width="1000" height="250"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Alura Viagens" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCE-yN-Z2G">
-                            <rect key="frame" x="21" y="49" width="149" height="33"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alura Viagens" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCE-yN-Z2G">
+                            <rect key="frame" x="310" y="50" width="149" height="33"/>
                             <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="23"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
@@ -27,7 +26,9 @@
                     </subviews>
                     <color key="backgroundColor" red="0.11764705882352941" green="0.23137254901960785" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
+                        <constraint firstItem="gCE-yN-Z2G" firstAttribute="top" secondItem="c5X-r8-D1a" secondAttribute="top" constant="50" id="c8Y-Z6-wzQ"/>
                         <constraint firstAttribute="height" constant="250" id="hEC-y5-D4e"/>
+                        <constraint firstAttribute="width" constant="1000" id="zYO-EJ-aP2"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="epe-aQ-ZLJ" userLabel="Banner View">
@@ -80,16 +81,17 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
+                <constraint firstItem="gCE-yN-Z2G" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="17" id="C0Y-WP-DGR"/>
                 <constraint firstItem="epe-aQ-ZLJ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="19" id="ChK-RM-vSj"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="epe-aQ-ZLJ" secondAttribute="trailing" constant="20" id="M5M-Mm-8vR"/>
-                <constraint firstItem="c5X-r8-D1a" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="WDm-Mc-S7h"/>
                 <constraint firstItem="epe-aQ-ZLJ" firstAttribute="bottom" secondItem="c5X-r8-D1a" secondAttribute="bottom" constant="10" id="e0i-QB-vmE"/>
+                <constraint firstItem="c5X-r8-D1a" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ms9-Kl-IbZ"/>
                 <constraint firstItem="c5X-r8-D1a" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="oms-eo-lGe"/>
-                <constraint firstItem="c5X-r8-D1a" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="tC1-aL-VLs"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="bannerImageView" destination="GkF-ji-EPf" id="wmy-Gl-DLN"/>
+                <outlet property="bannerView" destination="epe-aQ-ZLJ" id="wj6-Zg-4BJ"/>
                 <outlet property="headerView" destination="Ehx-FS-0Ip" id="guU-nd-pkz"/>
                 <outlet property="tituloLabel" destination="gCE-yN-Z2G" id="6bD-mI-di1"/>
             </connections>
