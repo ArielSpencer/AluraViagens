@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  AluraViagens
 //
-//  Created by Ariel Spencer on 23/11/24.
+//  Created by Ândriu Felipe Coelho on 13/03/21.
 //
 
 import UIKit
