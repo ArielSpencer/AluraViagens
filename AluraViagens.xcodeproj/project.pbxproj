@@ -15,6 +15,8 @@
 		0353E14E25FD570200221138 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0353E14C25FD570200221138 /* LaunchScreen.storyboard */; };
 		0353E15B25FD636500221138 /* HomeTableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0353E15A25FD636500221138 /* HomeTableViewHeader.xib */; };
 		0353E16125FD6CC500221138 /* HomeTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0353E16025FD6CC500221138 /* HomeTableViewHeader.swift */; };
+		A28CC9022CF6AD8F000859D3 /* ViagemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28CC9002CF6AD8F000859D3 /* ViagemTableViewCell.swift */; };
+		A28CC9032CF6AD8F000859D3 /* ViagemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A28CC9012CF6AD8F000859D3 /* ViagemTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		0353E14F25FD570200221138 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0353E15A25FD636500221138 /* HomeTableViewHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewHeader.xib; sourceTree = "<group>"; };
 		0353E16025FD6CC500221138 /* HomeTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewHeader.swift; sourceTree = "<group>"; };
+		A28CC9002CF6AD8F000859D3 /* ViagemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViagemTableViewCell.swift; sourceTree = "<group>"; };
+		A28CC9012CF6AD8F000859D3 /* ViagemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViagemTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,7 @@
 				0353E14525FD570200221138 /* ViewController.swift */,
 				0353E14725FD570200221138 /* Main.storyboard */,
 				03965CD52662D76600CEDD53 /* Header */,
+				A28CC8FF2CF6AD29000859D3 /* Cells */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -95,6 +100,15 @@
 				0353E16025FD6CC500221138 /* HomeTableViewHeader.swift */,
 			);
 			path = Header;
+			sourceTree = "<group>";
+		};
+		A28CC8FF2CF6AD29000859D3 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A28CC9002CF6AD8F000859D3 /* ViagemTableViewCell.swift */,
+				A28CC9012CF6AD8F000859D3 /* ViagemTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +172,7 @@
 				0353E15B25FD636500221138 /* HomeTableViewHeader.xib in Resources */,
 				0353E14B25FD570200221138 /* Assets.xcassets in Resources */,
 				0353E14925FD570200221138 /* Main.storyboard in Resources */,
+				A28CC9032CF6AD8F000859D3 /* ViagemTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0353E14625FD570200221138 /* ViewController.swift in Sources */,
+				A28CC9022CF6AD8F000859D3 /* ViagemTableViewCell.swift in Sources */,
 				0353E16125FD6CC500221138 /* HomeTableViewHeader.swift in Sources */,
 				0353E14225FD570200221138 /* AppDelegate.swift in Sources */,
 				0353E14425FD570200221138 /* SceneDelegate.swift in Sources */,
